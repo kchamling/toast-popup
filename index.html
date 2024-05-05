@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toast Popup</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <h1>Toast Popup</h1>
+    <div class="container">
+      <select id="horizontal-position">
+        <option value="left">Left</option>
+        <option value="right">Right</option>
+      </select>
+      <select id="vertical-position">
+        <option value="top">Top</option>
+        <option value="bottom">Bottom</option>
+      </select>
+      <select id="toast-type">
+        <option value="success">Success</option>
+        <option value="warning">Warning</option>
+        <option value="Error">Error</option>
+        <option value="info">Info</option>
+      </select>
+      <input
+        type="text"
+        id="toast-message"
+        value="This is a toast toast message"
+        placeholder="Message"
+      />
+
+      <div class="duration-container">
+        <label for="duration">Duration</label>
+        <input type="range" id="duration" min="2" max="10" />
+      </div>
+
+      <button id="show-toast-btn" type="button">Show Toast</button>
+    </div>
+
+    <div class="toast-msg-container">
+    
+    </div>
+  </body>
+</html>
+
+
+
++
